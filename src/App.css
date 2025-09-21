@@ -1,0 +1,45 @@
+body{
+  background-color: #212121;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-link:hover{
+  @apply text-[#30CBEF] transition ease-in duration-200
+}
+
+.link:hover{
+  @apply text-[#30CBEF] transition ease-in duration-200
+}
+
+.code-font {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section-heading{
+  @apply code-font lowercase text-6xl text-white text-center;
+}
+
+.section-width {
+  @apply max-w-[1200px];
+}
+
+.body-color{
+  color: #E6DB74;
+}
+
+.text-primary-color{
+  color: #30CBEF
+}
+
+.button-style{
+  @apply code-font rounded bg-gray-400 w-fit pt-2 pb-2 pr-4 pl-4
+}
+.button-style:hover{
+  @apply bg-gray-800 w-fit body-color transition ease-in duration-200
+}
+
+.contact-card{
+  @apply border border-gray-600 rounded shadow-md shadow-gray-800 text-center m-2
+}

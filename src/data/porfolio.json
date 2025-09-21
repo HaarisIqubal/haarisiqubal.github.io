@@ -1,0 +1,76 @@
+{
+    "portfolio": [
+        {
+            "id": 1,
+            "title": "Point Prevalence Analysis App for Infectious Disease Stewardship",
+            "description": "Built Web Application to assist infectious disease specialists in point prevalence analysis and supporting antimicrobial stewardship effort.",
+            "img": "/images/port-infekt.webp",
+            "topic": "ML/DL",
+            "link": "http://ppa-app-prod.vercel.app/",
+            "tags": ["next.js", "llm", "postgres"]
+        }
+        ,{
+            "id": 2,
+            "title": "Artophilic",
+            "description": "Built E-Commerce project from ground up, it is build entirely on NodeJS, Passport to fully secure routes and MongoDB as Database.",
+            "img": "/images/port-arto.webp",
+            "topic": "Web",
+            "link": "http://artofilic.onrender.com/",
+            "tags": ["node.js", "mongo_db", "express"]
+        },
+        {
+            "id": 3,
+            "title": "Clone IX",
+            "description": "This app helps to create a personal persona which sounds and feels like a real clone to its user. This project build on top of LLM. It also uses NextJS for its website and other functionality.",
+            "img": "/images/port-cloneix.webp",
+            "topic": "Web",
+            "link": "",
+            "tags": ["next.js", "framer_motion", "react_auth"]
+        },
+        {
+            "id": 4,
+            "title": "Deck Flashcard App",
+            "description": "Deck is flashcard based app built on top of SwiftUI and Core Data. It use spaced repetition based learning algorithm which help use to remember important things in a flash.",
+            "img": "/images/port-deck.webp",
+            "topic": "Swift",
+            "link": "https://apps.apple.com/us/app/deck-flashcard-learning-app/id1545176753",
+            "tags": ["swift_ui", "core_data", "core_vision"]
+        },
+        {
+            "id": 5,
+            "title": "Adhan - Prayer Tracking App",
+            "description": "Adhan app is built on SwiftUI and Core Location. It helps user to track their daily prayer. It also use the user location to calculate prayer timings.",
+            "img": "/images/port-adhan.webp",
+            "topic": "Swift",
+            "link": "https://apps.apple.com/us/app/adhan-prayer-timings/id6475295378",
+            "tags": ["swift_ui", "core_location", "user_notification"]
+        },
+        {
+            "id": 6,
+            "title": "Hand Pose - ASL (American Sign Language)",
+            "description": "Hand pose app is built on top of MediaPipe and OpenCV. It helps to train their own sign language with capturing images from user for all alphabets. Then these image are fed inside a deep neural network which is trained using the dataset. Then finally is show prediction on screen when use do a gesture on screen.",
+            "img": "https://tecdn.b-cdn.net/img/new/standard/city/044.webp",
+            "topic": "ML/DL",
+            "link": "https://github.com/HaarisIqubal/ml-projects/tree/main/hand_pose",
+            "tags": ["open_cv_2", "media_pipe", "neural_network"]
+        },
+        {
+            "id": 7,
+            "title": "Instance Image Segmentation - Benchmark for Automatic Glottis Segmentation Dataset",
+            "description": "In this project I have use Glottis Segmentation Images and Fed inside a U-Net Architecture to perform a Automatic segmentation of Glottis",
+            "img": "https://tecdn.b-cdn.net/img/new/standard/city/044.webp",
+            "topic":"ML/DL",
+            "link": "",
+            "tags": ["u_net", "deep_neural_network", "_glob"]
+        },
+        {
+            "id": 8,
+            "title": "Machine Learning Project",
+            "description": "Some example Machine Learning project build on various machine learning algorithms and multiple frameworks.",
+            "img": "https://tecdn.b-cdn.net/img/new/standard/city/044.webp",
+            "topic":"ML/DL",
+            "link": "https://github.com/HaarisIqubal/ml-projects",
+            "tags": ["ml-dl", "cnn/lstm/gru", "deep neural network"]
+        }
+    ]
+}
