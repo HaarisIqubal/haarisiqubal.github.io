@@ -9,25 +9,40 @@ permissions:
   id-token: write
   contents: read
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
+          
       - name: Install dependencies
         run: npm ci
-      - name: Build
-        run: DISABLE_ESLINT_PLUGIN=true npm run build
-
-      # Upload the build using the Pages-specific uploader
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        
+      - name: Build project
+        run: |
+          DISABLE_ESLINT_PLUGIN=true npm run build
+          ls -la build/
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
-
+          
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        id: deployment
+        uses: actions/deploy-pages@v2
