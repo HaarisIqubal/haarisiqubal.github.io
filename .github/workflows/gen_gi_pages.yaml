@@ -22,12 +22,12 @@ jobs:
         run: npm ci
       - name: Build
         run: DISABLE_ESLINT_PLUGIN=true npm run build
-      - name: Upload build
-        uses: actions/upload-artifact@v4
+
+      # Upload the build using the Pages-specific uploader
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: build
           path: build
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-        with:
-          artifact-path: build
