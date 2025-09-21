@@ -2,6 +2,13 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+
+# Grant the token the minimal permissions required by deploy-pages
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
