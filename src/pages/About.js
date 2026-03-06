@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typewriter ,Cursor} from 'react-simple-typewriter'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ScrollToTop from '../utils/ScrollToTop';
 export default function About() {
   return (
@@ -33,21 +33,21 @@ export default function About() {
         </div>
         <div className='grid sm:grid-cols-2'>
           <div className='p-4'>
-            <h4 className='text-white text-2xl code-font'>_teamwork</h4>
+            <h4 className='text-2xl code-font' style={{ color: 'var(--color-heading)' }}>_teamwork</h4>
             <p className='body-color'>Teamwork is crucial in the development for a project. By working together, a team can overcome challenges, share knowledge, and ensure that the final product meets the desired standards. Communication and collaboration are key to success.</p>
           </div>
           <div className='p-4'>
-            <h4 className='text-white text-2xl code-font'>_innovation</h4>
+            <h4 className='text-2xl code-font' style={{ color: 'var(--color-heading)' }}>_innovation</h4>
             <p className='body-color'>Innovation is the heartbeat of progress—the spark that ignites change and transforms the ordinary into the extraordinary. It's about daring to dream, pushing boundaries, and embracing the unknown. Join me in exploring the endless possibilities of innovation, where ideas become reality and curiosity fuels our journey towards a brighter tomorrow.</p>
 
           </div>
           <div className='p-4'>
-            <h4 className='text-white text-2xl code-font'>_creativity</h4>
+            <h4 className='text-2xl code-font' style={{ color: 'var(--color-heading)' }}>_creativity</h4>
             <p className='body-color'>Where ideas bloom, perspectives shift. Let's explore this colorful world together, crafting new horizons with every stroke of imagination</p>
 
           </div>
           <div className='p-4'>            
-            <h4 className='text-white text-2xl code-font'>_excellence</h4>
+            <h4 className='text-2xl code-font' style={{ color: 'var(--color-heading)' }}>_excellence</h4>
             <p className='body-color'>Excellence is not just a goal—it's a way of life. It's the relentless pursuit of perfection, the dedication to surpass expectations. Join me in embracing excellence, where every endeavor is a step towards greatness.</p>
           </div>
         </div>
@@ -62,22 +62,22 @@ export default function About() {
         <p className='body-color text-center'>something bit personal yet important</p>
         <div className='grid sm:grid-cols-2 place-items-center'>
           <div className='p-4'>
-            <h4 className='text-white text-4xl code-font'>🚴 _cycling</h4>
+            <h4 className='text-4xl code-font' style={{ color: 'var(--color-heading)' }}>🚴 _cycling</h4>
           </div>
           <div className='p-4'>
-            <h4 className='text-white text-4xl code-font'>🥾 _hiking</h4>
+            <h4 className='text-4xl code-font' style={{ color: 'var(--color-heading)' }}>🥾 _hiking</h4>
           </div>
           <div className='p-4'>
-            <h4 className='text-white text-4xl code-font'>⚽️ _football</h4>
+            <h4 className='text-4xl code-font' style={{ color: 'var(--color-heading)' }}>⚽️ _football</h4>
           </div>
           <div className='p-4'>            
-            <h4 className='text-white text-4xl code-font'>☕️ _cafe_hoping</h4>
+            <h4 className='text-4xl code-font' style={{ color: 'var(--color-heading)' }}>☕️ _cafe_hoping</h4>
           </div>
           <div className='p-4'>            
-            <h4 className='text-white text-4xl code-font'>🥷 _hackathoning</h4>
+            <h4 className='text-4xl code-font' style={{ color: 'var(--color-heading)' }}>🥷 _hackathoning</h4>
           </div>
           <div className='p-4'>            
-            <h4 className='text-white text-4xl code-font'>👨‍🍳 _cooking</h4>
+            <h4 className='text-4xl code-font' style={{ color: 'var(--color-heading)' }}>👨‍🍳 _cooking</h4>
           </div>
         </div>
         
@@ -92,11 +92,11 @@ export default function About() {
         <p className='body-color text-center'>something bit you 🤫 about</p>
         <div className='grid sm:grid-cols-2 place-items-center'>
           <div className='p-4'>
-            <h4 className='text-white text-4xl code-font text-center'>_birthday</h4>
+            <h4 className='text-4xl code-font text-center' style={{ color: 'var(--color-heading)' }}>_birthday</h4>
             <p className='body-color'>celebrating everyday 🥳</p>
           </div>
           <div className='p-4'>
-            <h4 className='text-white text-4xl code-font text-center'>_location</h4>
+            <h4 className='text-4xl code-font text-center' style={{ color: 'var(--color-heading)' }}>_location</h4>
             <p className='body-color'>127.0.0.1:3000</p>
           </div>
         </div>

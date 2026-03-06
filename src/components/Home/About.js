@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import RevealOnScroll from '../RevealOnScroll'
 export default function About() {
   return (
     <div className='flex items-center justify-center pt-[100px]'>
-        <div className='section-width'>
+        <RevealOnScroll className='section-width'>
         <h2 className='section-heading'>
         &lt;About_Me&gt;
         </h2>
@@ -17,7 +18,7 @@ export default function About() {
             Read More &#125;
         </Link>
         </div>
-        </div>
+        </RevealOnScroll>
     </div>
   )
 }

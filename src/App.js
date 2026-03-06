@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { ThemeProvider } from './utils/ThemeContext';
 
 // Pages
 import Home from './pages/Home';
@@ -13,8 +14,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
+    <ThemeProvider>
     <Router>
-    <div className="App">
+    <div className="App min-h-screen" style={{ backgroundColor: 'var(--color-bg)', transition: 'background-color 0.3s ease' }}>
         <nav>
         <Navbar />
         </nav>
@@ -32,6 +34,7 @@ function App() {
         </footer>
     </div>
     </Router>
+    </ThemeProvider>
   );
 }
 

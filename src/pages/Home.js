@@ -4,7 +4,7 @@ import About from '../components/Home/About';
 import Portfolio from '../components/Home/Portfolio';
 import Contact from '../components/Home/Contact';
 import ScrollToTop from '../utils/ScrollToTop';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   return (

@@ -1,45 +1,94 @@
-body{
-  background-color: #212121;
+/* ─── Theme tokens ────────────────────────────────────────────── */
+:root {
+  --color-bg:         #F8F8F6;
+  --color-card-bg:    #FFFFFF;
+  --color-nav-bg:     rgba(248, 248, 246, 0.92);
+  --color-text:       #3A3A2E;
+  --color-primary:    #0CAFD4;
+  --color-heading:    #1A1A1A;
+  --color-border:     rgba(0, 0, 0, 0.12);
+  --color-muted:      #6B7280;
+}
+
+:root.dark {
+  --color-bg:         #212121;
+  --color-card-bg:    #2A2A2A;
+  --color-nav-bg:     rgba(33, 33, 33, 0.92);
+  --color-text:       #E6DB74;
+  --color-primary:    #30CBEF;
+  --color-heading:    #FFFFFF;
+  --color-border:     rgba(255, 255, 255, 0.12);
+  --color-muted:      #9CA3AF;
+}
+
+/* ─── Base ────────────────────────────────────────────────────── */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.nav-link:hover{
-  @apply text-[#30CBEF] transition ease-in duration-200
+/* ─── Nav ─────────────────────────────────────────────────────── */
+.nav-link:hover {
+  @apply transition ease-in duration-200;
+  color: var(--color-primary);
 }
 
-.link:hover{
-  @apply text-[#30CBEF] transition ease-in duration-200
+.link:hover {
+  @apply transition ease-in duration-200;
+  color: var(--color-primary);
 }
 
+/* ─── Typography ──────────────────────────────────────────────── */
 .code-font {
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
-.section-heading{
-  @apply code-font lowercase text-6xl text-white text-center;
+.section-heading {
+  @apply code-font lowercase text-6xl text-center;
+  color: var(--color-heading);
 }
 
+/* ─── Layout ──────────────────────────────────────────────────── */
 .section-width {
   @apply max-w-[1200px];
 }
 
-.body-color{
-  color: #E6DB74;
+/* ─── Color helpers ───────────────────────────────────────────── */
+.body-color {
+  color: var(--color-text);
 }
 
-.text-primary-color{
-  color: #30CBEF
+.text-primary-color {
+  color: var(--color-primary);
 }
 
-.button-style{
-  @apply code-font rounded bg-gray-400 w-fit pt-2 pb-2 pr-4 pl-4
-}
-.button-style:hover{
-  @apply bg-gray-800 w-fit body-color transition ease-in duration-200
+.text-muted {
+  color: var(--color-muted);
 }
 
-.contact-card{
-  @apply border border-gray-600 rounded shadow-md shadow-gray-800 text-center m-2
+/* ─── Buttons ─────────────────────────────────────────────────── */
+.button-style {
+  @apply code-font rounded w-fit pt-2 pb-2 pr-4 pl-4;
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button-style:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+/* ─── Cards ───────────────────────────────────────────────────── */
+.contact-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  @apply rounded shadow-md text-center m-2;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import portolio from '../../data/porfolio.json'
 import PortfolioCard from '../Portfolio/PortfolioCard'
+import RevealOnScroll from '../RevealOnScroll'
 
 export default function Portfolio() {
   const porfolio = portolio.portfolio
@@ -13,9 +14,11 @@ export default function Portfolio() {
         Welcome to my portfolio—a visual narrative of my journey, passions, and creations. 
         <br/>Each piece reflects my dedication, creativity, and commitment to excellence. Explore and immerse yourself in the stories behind the work
         </p>
-        <div className="grid md:grid-cols-3 m-4 content-center">
-          {porfolio && porfolio.slice(0,3).map(item => (
-            <PortfolioCard item={item} />
+        <div className="grid md:grid-cols-3 gap-6 mt-6 items-stretch">
+          {porfolio && porfolio.slice(0,3).map((item, i) => (
+            <RevealOnScroll key={item.id} delay={`${i * 100}ms`} className="h-full">
+              <PortfolioCard item={item} />
+            </RevealOnScroll>
           ))}
         </div>
         <div className='flex items-center justify-center pt-4'>

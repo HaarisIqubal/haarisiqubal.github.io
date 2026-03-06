@@ -7,16 +7,20 @@
             "img": "/images/port-infekt.webp",
             "topic": "ML/DL",
             "link": "http://ppa-app-prod.vercel.app/",
-            "tags": ["next.js", "llm", "postgres"]
-        }
-        ,{
+            "tags": ["next.js", "llm", "postgres"],
+            "startDate": "2024-10",
+            "endDate": "2025-03"
+        },
+        {
             "id": 2,
             "title": "Artophilic",
             "description": "Built E-Commerce project from ground up, it is build entirely on NodeJS, Passport to fully secure routes and MongoDB as Database.",
             "img": "/images/port-arto.webp",
             "topic": "Web",
             "link": "http://artofilic.onrender.com/",
-            "tags": ["node.js", "mongo_db", "express"]
+            "tags": ["node.js", "mongo_db", "express"],
+            "startDate": "2020-01",
+            "endDate": "2020-06"
         },
         {
             "id": 3,
@@ -25,7 +29,9 @@
             "img": "/images/port-cloneix.webp",
             "topic": "Web",
             "link": "",
-            "tags": ["next.js", "framer_motion", "react_auth"]
+            "tags": ["next.js", "framer_motion", "react_auth"],
+            "startDate": "2023-09",
+            "endDate": "2024-02"
         },
         {
             "id": 4,
@@ -34,7 +40,9 @@
             "img": "/images/port-deck.webp",
             "topic": "Swift",
             "link": "https://apps.apple.com/us/app/deck-flashcard-learning-app/id1545176753",
-            "tags": ["swift_ui", "core_data", "core_vision"]
+            "tags": ["swift_ui", "core_data", "core_vision"],
+            "startDate": "2020-08",
+            "endDate": "2020-12"
         },
         {
             "id": 5,
@@ -43,7 +51,9 @@
             "img": "/images/port-adhan.webp",
             "topic": "Swift",
             "link": "https://apps.apple.com/us/app/adhan-prayer-timings/id6475295378",
-            "tags": ["swift_ui", "core_location", "user_notification"]
+            "tags": ["swift_ui", "core_location", "user_notification"],
+            "startDate": "2023-06",
+            "endDate": "2023-11"
         },
         {
             "id": 6,
@@ -52,25 +62,31 @@
             "img": "https://tecdn.b-cdn.net/img/new/standard/city/044.webp",
             "topic": "ML/DL",
             "link": "https://github.com/HaarisIqubal/ml-projects/tree/main/hand_pose",
-            "tags": ["open_cv_2", "media_pipe", "neural_network"]
+            "tags": ["open_cv_2", "media_pipe", "neural_network"],
+            "startDate": "2021-06",
+            "endDate": "2021-09"
         },
         {
             "id": 7,
             "title": "Instance Image Segmentation - Benchmark for Automatic Glottis Segmentation Dataset",
             "description": "In this project I have use Glottis Segmentation Images and Fed inside a U-Net Architecture to perform a Automatic segmentation of Glottis",
             "img": "https://tecdn.b-cdn.net/img/new/standard/city/044.webp",
-            "topic":"ML/DL",
+            "topic": "ML/DL",
             "link": "",
-            "tags": ["u_net", "deep_neural_network", "_glob"]
+            "tags": ["u_net", "deep_neural_network", "_glob"],
+            "startDate": "2022-04",
+            "endDate": "2022-08"
         },
         {
             "id": 8,
             "title": "Machine Learning Project",
             "description": "Some example Machine Learning project build on various machine learning algorithms and multiple frameworks.",
             "img": "https://tecdn.b-cdn.net/img/new/standard/city/044.webp",
-            "topic":"ML/DL",
+            "topic": "ML/DL",
             "link": "https://github.com/HaarisIqubal/ml-projects",
-            "tags": ["ml-dl", "cnn/lstm/gru", "deep neural network"]
+            "tags": ["ml-dl", "cnn/lstm/gru", "deep neural network"],
+            "startDate": "2020-03",
+            "endDate": "present"
         }
     ]
 }

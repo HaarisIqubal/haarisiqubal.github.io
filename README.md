@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Haaris Iqubal — Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat&logo=react&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.19-38BDF8?style=flat&logo=tailwindcss&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-6.30.3-CA4245?style=flat&logo=reactrouter&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-## Available Scripts
+Personal developer portfolio built with React 18 and Tailwind CSS. Showcases projects, experience, and skills with a code-terminal aesthetic, dark/light/system theming, and a project timeline view.
 
-In the project directory, you can run:
+**Live site:** [haarisiqubal.github.io/portfolio](https://haarisiqubal.github.io/portfolio)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Layer | Library | Version |
+|-------|---------|---------|
+| UI | React | 18.3.1 |
+| Styling | Tailwind CSS | 3.4.19 |
+| Routing | react-router-dom | 6.30.3 |
+| Typewriter | react-simple-typewriter | 5.0.1 |
+| Icons | react-icons | 5.6.0 |
+| Page titles | react-helmet-async | 2.0.5 |
+| Build | react-scripts (CRA) | 5.0.1 |
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Local Development
 
-### `npm run build`
+```bash
+npm install
+npm start        # dev server → http://localhost:3000
+npm run build    # production build → /build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+  App.js              Router, ThemeProvider, layout wrapper
+  components/
+    Navbar.js         Sticky navbar with theme toggle
+    ThemeToggle.js    3-way theme cycle button (system / light / dark)
+    RevealOnScroll.js Scroll-reveal animation wrapper
+    Home/             Hero, About snippet, Portfolio preview, Contact sections
+    Portfolio/        PortfolioCard, PortfolioPosts, TimelineItem, TimelineView
+  data/
+    porfolio.json     Portfolio items with dates, tags, topics
+  pages/              Home, About, Portfolio, Resume, PageNotFound
+  utils/
+    ThemeContext.js   3-mode theme state (system / light / dark) + OS auto-detection
+    useScrollReveal.js IntersectionObserver hook for scroll animations
+    ScrollToTop.js
+    ToText.js
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 3-mode theming — system (OS auto-detect), light, dark; persisted in localStorage
+- Portfolio grid view and chronological timeline view with toggle
+- Scroll-reveal fade-up animations on section entry
+- Filter projects by topic: Web, Swift, ML/DL
+- Medium RSS blog posts feed
+- Responsive layout with mobile hamburger menu
+- Sticky navbar with backdrop blur
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Changelog
 
-## Learn More
+See [CHANGELOG.md](./CHANGELOG.md) for the full history.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Recent
+- `v1.0.0` — 3-mode theming, timeline view, scroll animations, dependency upgrades, react-helmet-async migration
+- `v0.1.0` — Initial baseline (CRA, Tailwind, portfolio grid, resume, blog feed)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -8,15 +8,14 @@ export default function Hero() {
     }) 
   return (
     <div className='flex flex-col items-center justify-center h-[100vh]'>
-        <div className='text-white uppercase'>
-            {'// Hi I\'m Haaris 👋🏼, A...'}
+        <div className='text-sm uppercase tracking-widest mb-4' style={{ color: 'var(--color-muted)' }}>
+            {"// Hi I'm Haaris, A..."}
         </div>
-        <div className="code-font flex text-4xl text-white">
-            &#123;
-        <div className='text-[#E6DB74]'>{text}<Cursor /></div>
-            &#125;
-      </div>
+        <div className="code-font flex text-4xl md:text-5xl">
+            <span style={{ color: 'var(--color-heading)' }}>&#123;</span>
+            <span style={{ color: 'var(--color-text)' }}>{text}<Cursor /></span>
+            <span style={{ color: 'var(--color-heading)' }}>&#125;</span>
+        </div>
     </div>
-    
   )
 }

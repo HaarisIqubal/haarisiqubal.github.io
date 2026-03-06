@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typewriter ,Cursor} from 'react-simple-typewriter'
 import resume from '../static/resume.pdf'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import ScrollToTop from '../utils/ScrollToTop'
 
 const experiences = [
@@ -208,7 +208,7 @@ export default function Resume() {
             <div key={i} className='grid md:grid-cols-4 border rounded border-gray-400 p-2 mt-2'>
                 <div>
                     <p className='text-gray-400'>{exp.period}</p>
-                    <p className='text-white'>{exp.location}</p>
+                    <p style={{ color: 'var(--color-heading)' }}>{exp.location}</p>
                     </div>
               <div className='text-primary-color code-font text-xl '>
                 &#123;
@@ -216,7 +216,7 @@ export default function Resume() {
                 &#125;
                 {
                     exp.department &&
-                    <p className='text-white'>
+                    <p style={{ color: 'var(--color-heading)' }}>
                         Department: {exp.department}
                     </p>
                 }
@@ -253,7 +253,7 @@ export default function Resume() {
             <div key={i} className='grid md:grid-cols-4 border rounded border-gray-400 p-2 mt-2'>
                 <div>
                     <p className='text-gray-400'>{proj.period}</p>
-                    <p className='text-white'>{proj.location}</p>
+                    <p style={{ color: 'var(--color-heading)' }}>{proj.location}</p>
                     </div>
               <div className='text-primary-color code-font text-xl '>
                 &#123;
@@ -261,7 +261,7 @@ export default function Resume() {
                 &#125;
                 {
                     proj.department &&
-                    <p className='text-white'>
+                    <p style={{ color: 'var(--color-heading)' }}>
                         Department: {proj.department}
                     </p>
                 }
